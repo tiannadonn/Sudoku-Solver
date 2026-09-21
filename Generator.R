@@ -1,5 +1,3 @@
-  # Setting parameters for difficulty
-
   get_difficulty_holes <- function(difficulty) {
     ranges <- list(
       easy= c(30, 38),
@@ -18,7 +16,7 @@
     sample(range[1]:range[2], 1)
   }
 
-  #
+  
 
   has_unique_solution <- function(board) count_solutions(board, limit = 2) == 1
 

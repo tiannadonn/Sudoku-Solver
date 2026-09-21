@@ -3,7 +3,7 @@
 # ============================================
 # Board is represented with a 9x9 matrix where 0 = a blank space.
 
-  # 
+  
 
   is_valid <- function(board, row, col, num) {
     if (num %in% board[row, ]) return(FALSE)
@@ -18,7 +18,7 @@
     TRUE
   }
 
-  #
+  
 
   find_empty <- function(board) {
     for (row in 1:9) {
@@ -29,7 +29,7 @@
     return(NULL)
   }
 
-  # 
+  
 
   solve_sudoku <- function(board) {
     empty <- find_empty(board)
@@ -48,7 +48,7 @@
     return(NULL)
   }
 
-  #
+  
 
   count_solutions <- function(board, limit=2) { 
     # Function limited to two solutions because solution MUST be unique.

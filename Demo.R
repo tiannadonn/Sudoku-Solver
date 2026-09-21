@@ -1,4 +1,3 @@
-
   generate_puzzle <- function(difficulty = "medium") {
     num_holes <- get_difficulty_holes(difficulty)
   

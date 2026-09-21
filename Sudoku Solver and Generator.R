@@ -4,7 +4,6 @@
 # Board is represented with a 9x9 matrix where 0 = a blank space.
 
 
-# 
   is_valid <- function(board, row, col, num) {
     if (num %in% board[row, ]) return(FALSE)
     if (num %in% board[, col]) return(FALSE)
@@ -18,7 +17,6 @@
     TRUE
   }
   
-#
   
   find_empty <- function(board) {
     for (row in 1:9) {
@@ -29,7 +27,6 @@
     return(NULL)
   }
   
-# 
   
   solve_sudoku <- function(board) {
     empty <- find_empty(board)
@@ -48,7 +45,6 @@
     return(NULL)
   }
   
-#
   
   count_solutions <- function(board, limit=2) { 
   # Function limited to two solutions because solution MUST be unique.
@@ -82,7 +78,6 @@
   }
   
   
-  # Setting parameters for difficulty
   
   get_difficulty_holes <- function(difficulty) {
     ranges <- list(
@@ -102,7 +97,6 @@
     sample(range[1]:range[2], 1)
   }
   
-  #
 
   has_unique_solution <- function(board) count_solutions(board, limit = 2) == 1
   
